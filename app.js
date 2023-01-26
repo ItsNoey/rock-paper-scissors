@@ -6,8 +6,10 @@ let computerScore = 0;
 
 const header = document.querySelector('h1');
 const result = document.querySelector('h2');
-const playerChoice = document.querySelector('#player-choice');
 const btnResult = document.querySelector('button');
+const playerChoice = document.querySelector('#player-choice');
+const playerScoreEl = document.querySelector('.player-score');
+const computerScoreEl = document.querySelector('.computer-score');
 
 //Generate random choices for computer
 const getComputerChoice = function () {
@@ -15,10 +17,17 @@ const getComputerChoice = function () {
   let randomChoice = choice[Math.floor(Math.random() * choice.length)];
   return randomChoice;
 };
-getComputerChoice();
+
+//Show current score
+const displayScore = function () {
+  playerScoreEl.textContent = playerScore;
+  computerScoreEl.textContent = computerScore;
+};
 
 //Game logic and find the winner
 const playRound = function (playerSelection, computerSelection) {
+  //Enable the game button
+  btnResult.disabled = false;
   if (playerSelection == 'rock' && computerSelection == 'paper') {
     computerScore++;
     result.textContent = 'You lose! Paper beats Rock';
@@ -41,6 +50,9 @@ const playRound = function (playerSelection, computerSelection) {
     result.textContent = `It's a draw.`;
   }
 
+  //Display current score
+  displayScore();
+
   //Find the winner
   if (playerScore === winningScore || computerScore === winningScore) {
     result.textContent = `The absolute winner is ${
@@ -49,9 +61,9 @@ const playRound = function (playerSelection, computerSelection) {
     //Reset the game
     header.textContent = 'Restart the Page to Play Rock Paper Scissors';
     playerChoice.textContent = '';
+    //Disable the game button
+    btnResult.disabled = true;
   }
-  console.log(playerScore);
-  console.log(computerScore);
 };
 
 //Play game
