@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Let's Play Rock Paper Scissors!</h1>
+    <div class="container">
+      <h1>Let's Play Rock Paper Scissors!</h1>
 
-    <label for="player-choice">Pick your weapon:</label>
+      <label for="player-choice">Pick your weapon:</label>
 
-    <select name="choices" id="player-choice">
-      <option value="">--Please choose an option--</option>
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
+      <select name="choices" id="player-choice">
+        <option value="">--Please choose an option--</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
 
-    <button>See result!</button>
+      <button>See result!</button>
 
-    <div>
-      <p class="computer">
-        Computer's score: <span class="computer-score">0</span>
-      </p>
-      <p class="player">Player's score: <span class="player-score">0</span></p>
+      <div>
+        <p class="computer">
+          Computer's score: <span class="computer-score">0</span>
+        </p>
+        <p class="player">
+          Player's score: <span class="player-score">0</span>
+        </p>
+      </div>
+
+      <h2></h2>
     </div>
-
-    <h2></h2>
 
     <script src="app.js"></script>
   </body>
