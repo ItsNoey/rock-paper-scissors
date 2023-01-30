@@ -4,7 +4,7 @@ This is the first game I got to create all by myself. The interface is quite sim
 
 
 ## Live Preview
-(Click here)[https://itsnoey.github.io/rock-paper-scissors/] to play the game. 
+[Click here](https://itsnoey.github.io/rock-paper-scissors/) to play the game. 
 
 ## Screenshots
 <img width="961" alt="rock-paper-scissors" src="https://user-images.githubusercontent.com/77329731/215486318-357b0462-e05a-4c5e-92f8-1b8fa2eea0bb.png">
