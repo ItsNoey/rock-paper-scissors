@@ -47,8 +47,8 @@ h1 {
 }
 
 .play-arena {
-  width: 50vw;
-  height: 50vw;
+  width: 40vw;
+  height: 40vw;
   max-width: 700px;
   max-height: 700px;
   background: url(./images/frame.png) no-repeat center/cover;
@@ -116,9 +116,12 @@ h4 {
   color: var(--main-text-color);
 }
 
-h2,
+h2 {
+  font-size: clamp(0.75rem, 0.25rem + 1.4286vw, 2rem);
+}
+
 h3 {
-  font-size: clamp(0.75rem, -0.25rem + 3vw, 2rem);
+  font-size: clamp(0.75rem, -0.25rem + 2.25vw, 1.85rem);
 }
 
 h4 {
@@ -168,8 +171,8 @@ h4 {
   }
 
   .play-arena {
-    width: 70vw;
-    height: 70vw;
+    width: 75vw;
+    height: 75vw;
   }
 
   .choices {
