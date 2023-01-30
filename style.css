@@ -64,12 +64,13 @@ h1 {
 }
 
 .restart-game {
-  font-size: 1.2em;
+  font-size: clamp(0.5rem, -0.3rem + 2vw, 1.25rem);
   font-weight: bold;
   padding: 0.5em;
   color: white;
   background-color: black;
   display: none;
+  max-width: ;
 }
 
 .btn {
