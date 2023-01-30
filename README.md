@@ -7,10 +7,10 @@ This is the first game I got to create all by myself. The interface is quite sim
 [Click here](https://itsnoey.github.io/rock-paper-scissors/) to play the game. 
 
 ## Screenshots
-<img width="961" alt="rock-paper-scissors" src="https://user-images.githubusercontent.com/77329731/215486318-357b0462-e05a-4c5e-92f8-1b8fa2eea0bb.png">
+<img width="500" alt="rock-paper-scissors" src="https://user-images.githubusercontent.com/77329731/215486318-357b0462-e05a-4c5e-92f8-1b8fa2eea0bb.png">
 
 ## What I Learned from the Project
-- Changing images dynamically (learned from one of Jonas Schmedtman's JS course)
+- Changing images dynamically (learned from Jonas Schmedtman's JS course)
 - Refactoring the code to keep it DRY
 - Working with Event Listener and DOM Manipulation
 - Practicing HTML structure and CSS styling
