@@ -101,9 +101,6 @@ btnPlayer.forEach(btn => {
     let playerSelection = e.target.id;
     let computerSelection = getComputerChoice();
 
-    console.log(e.target.id);
-    console.log(computerSelection);
-
     return playRound(playerSelection, computerSelection);
   });
 });
