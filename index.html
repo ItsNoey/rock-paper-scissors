@@ -6,33 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <h1>Let's Play Rock Paper Scissors!</h1>
+      <h1>
+        <span class="title-rock">ROCK</span> <span class="title-dash">-</span>
+        <span class="title-paper">PAPER</span>
+        <span class="title-dash">-</span>
+        <span class="title-scissors">SCISSORS</span>
+      </h1>
 
-      <label for="player-choice">Pick your weapon:</label>
+      <div class="game-container">
 
-      <select name="choices" id="player-choice">
-        <option value="">--Please choose an option--</option>
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-      </select>
+        <div class="human choices">
 
-      <button>See result!</button>
+          <div class="player">
+            <h3 class="text">Human</h3>
+          </div>
 
-      <div>
-        <p class="computer">
-          Computer's score: <span class="computer-score">0</span>
-        </p>
-        <p class="player">
-          Player's score: <span class="player-score">0</span>
-        </p>
+          <div class="buttons">
+            <button class="btn player-option">
+              <img src="./images/rock.png" id="rock" alt="rock" />
+            </button>
+            <button class="btn player-option">
+              <img src="./images/paper.png" id="paper" alt="paper" />
+            </button>
+            <button class="btn player-option">
+              <img src="./images/scissors.png" id="scissors" alt="scissors" />
+            </button>
+          </div>
+
+          <div>
+            <h3 class="text">Score</h3>
+            <h4 class="player-score">0</h4>
+
+          </div>
+        </div>
+
+        <div class="play-arena">
+
+          <h2 class="intro text">First to 5 points wins the game</h2>
+
+          <button class="restart-game text" >Restart game</button>
+
+          <div id="choice-container">
+
+            <div class="choice-wrapper">
+              <img id="human-choice" src="./images/human/rock.png" alt="">
+            </div>
+
+            <div class="choice-wrapper">
+              <img id="computer-choice" src="./images/computer/rock.png" alt="">
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="computer choices">
+
+          <div class="player">
+            <h3 class="text">Computer</h3>
+          </div>
+
+          <div class="buttons">
+            <button class="btn">
+              <img src="./images/rock.png" alt="rock" />
+            </button>
+            <button class="btn">
+              <img src="./images/paper.png" alt="paper" />
+            </button>
+            <button class="btn">
+              <img src="./images/scissors.png" alt="scissors" />
+            </button>
+          </div>
+
+          <div>
+            <h3 class="text">Score</h3>
+            <h4 class="computer-score">0</h4>
+          </div>
+
+        </div>
       </div>
 
-      <h2></h2>
-    </div>
 
     <script src="app.js"></script>
   </body>

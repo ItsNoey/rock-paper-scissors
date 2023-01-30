@@ -1,3 +1,7 @@
+:root {
+  --main-text-color: #1b48c6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,10 +12,148 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Signika Negative', sans-serif;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  /* background: url(./images/frame.png) no-repeat center/cover; */
+  /* height: 90vh;
+  width: 900px; */
+}
+
+.title-rock {
+  color: #fdcf02;
+}
+
+.title-paper {
+  color: #21cfcb;
+}
+
+.title-scissors {
+  color: #ff6230;
+}
+
+.title-dash {
+  color: var(--main-text-color);
+}
+
+h1 {
+  font-size: clamp(1.5rem, -0.375rem + 6vw, 3rem);
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+}
+
+.play-arena {
+  width: 50vw;
+  height: 50vw;
+  max-width: 700px;
+  max-height: 700px;
   background: url(./images/frame.png) no-repeat center/cover;
-  height: 90vh;
-  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro,
+.restart-game {
+  margin-bottom: 2em;
+}
+
+.restart-game {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em;
+  color: white;
+  background-color: black;
+  display: none;
+}
+
+.btn {
+  border-radius: 200px;
+  overflow: hidden;
+  width: 7.5vw;
+  height: 7.5vw;
+  max-height: 90px;
+  max-width: 90px;
+}
+
+.btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+button {
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+}
+
+.human .btn:hover,
+.restart-game:hover {
+  transform: scale(1.1);
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  color: var(--main-text-color);
+}
+
+h2,
+h3,
+h4 {
+  font-size: clamp(1rem, -0.25rem + 3vw, 2rem);
+}
+
+/* h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 2em;
+} */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 48%;
+}
+
+.score {
+  height: 15%;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+#choice-container {
+  display: flex;
+  justify-content: space-around;
+  width: 96%;
+}
+
+.choice-wrapper {
+  width: 42%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.choice-wrapper img {
+  width: 100%;
 }
