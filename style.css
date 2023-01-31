@@ -170,7 +170,16 @@ h4 {
     margin-bottom: 2em;
   }
 
+  .human {
+    order: 3;
+  }
+
+  .computer {
+    order: 1;
+  }
+
   .play-arena {
+    order: 2;
     width: 75vw;
     height: 75vw;
   }
